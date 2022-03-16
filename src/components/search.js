@@ -19,7 +19,7 @@ function Search() {
   console.log(userPokemon)
 
   return (
-    <section>
+    <section className="search-container">
       <div>
         <Navbar/>
       </div>    
@@ -27,10 +27,36 @@ function Search() {
         <input 
           type="search" 
           id="user-search" 
+          style={{
+            background: 'white',
+            fontWeight: 'bold',
+            border: '1px, black, bold',
+            float: 'center',
+            padding: '10px',
+            borderRadius: '5px',
+            fontSize: '15px',
+            textAlign: 'center',
+          }}
           onChange={handleChange}
           placeholder="Search For Pokemon"/>
-        <button type="submit" onSubmit={handleSubmit}>Search</button>
+        <button 
+          type="submit" 
+          onSubmit={handleSubmit}
+          style={{
+            background: 'white',
+            fontWeight: 'bold',
+            float: 'center',
+            padding: '10px',
+            borderRadius: '5px',
+            border: '1px, black, bold',
+            fontSize: '15px',
+            textAlign: 'center',
+          }}>Search
+        </button>
       </form> 
+      <div className="search-image">
+        <img src="https://i.imgur.com/iSBMZcx.png" alt="pikachu"></img>
+      </div>
     </section>
   )
 }

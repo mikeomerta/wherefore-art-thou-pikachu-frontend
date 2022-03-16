@@ -1,43 +1,83 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+// * Home Page
+
 .home-container {
   display: flex;
-  justify-content: space space-between;
+  flex-direction: row;
+  background-color: grey;
 }
-
 .hero-image {
-  background-image: url("https://i.imgur.com/JkaG4KU.jpg");
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
-  width: 500px;
+  flex-direction: row;
+  height: 1200px;
+  width: 600px;  
+}
+.inner-home-container {
+  display: flex;
+  align-items: center;
 }
 .home-text-container {
-  padding: 0 0 0 20px;
+text-align: center;
+}
+h1 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80px;
+  font-style: italic;
 }
 
-
-
-
-
-
+// * Navbar
 
 .navbar {
-  background-color: grey;
+  background-color: rgb(245, 221, 2);
   display: flex;
   justify-content: center;
 }
-
 .home-link{
-  padding: 10px;  
+  padding: 10px;
+  text-decoration: none; 
+  font-size: 20px;  
 }
 
+// * Search
 
-
+.search-container {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+.search-image {
+  display: flex;
+  flex-direction: column-reverse ;
+  height: 900px;
+}
 .searchbar {
   display: flex;
   justify-content: center;
+  padding: 50px 0 0 0;
+}
+
+// * Show
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+.pokemon-name {
+  font-size: 40px;
+}
+.pokemon-image {
+  height: 600px;
+  width: 600px;
+}
+.pokemon-text {
+  font-size: 30px;
 }
 
 
