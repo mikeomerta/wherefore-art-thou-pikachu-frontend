@@ -3,12 +3,10 @@ import { useNavigate } from 'react-router'
 
 import Navbar from './navbar'
 
-
-
 function Search() {
   const navigate = useNavigate()
   const [userPokemon, setUserPokemon] = React.useState('')
-  
+
   const handleSubmit = (e) => {
     e.preventDefault() 
     userPokemon.toLowerCase()
@@ -32,7 +30,7 @@ function Search() {
           onChange={handleChange}
           placeholder="Search For Pokemon"/>
         <button type="submit" onSubmit={handleSubmit}>Search</button>
-      </form>
+      </form> 
     </section>
   )
 }
