@@ -9,7 +9,7 @@
 .home-container {
   display: flex;
   flex-direction: row;
-  background-color: grey;
+  background-color: rgb(177, 177, 177);
 }
 .hero-image {
   display: flex;
@@ -66,6 +66,8 @@ h1 {
 .pokemon-container {
   display: flex;
   flex-direction: column;
+  
+  align-items: center;
   text-align: center;
   background-color: white;
 }
@@ -80,6 +82,23 @@ h1 {
   font-size: 30px;
 }
 
+//  * Error 
+
+.error-container {
+  display: flex;
+  justify-content: center;
+}
+
+.error-text {
+  
+}
+
+.error-image {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+}
 
 
 
