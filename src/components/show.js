@@ -19,6 +19,7 @@ function Show() {
       try {
         const res = await axios.get('/api/pokemon')
         setPokemon(res.data)
+        console.log(res.data)
       } catch (err) {
         console.log(err)
       }
@@ -37,7 +38,7 @@ function Show() {
             <h3 className="pokemon-name" key={character.name}>{character.name}</h3>
             <img className="pokemon-image" src={character.image}></img>
             <h4 className="pokemon-text">{character.pokedexEntry}</h4>
-          </>
+          </>         
         ))}       
       </div>
     </section>

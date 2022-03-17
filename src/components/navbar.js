@@ -12,7 +12,8 @@ function Navbar() {
         textAlign: 'center',
       }}>      
       <div className="home-link">
-        <Link to="/">Home</Link>
+        <Link className="home-link-button" to="/">Home</Link>
+        <Link className="search-link-button" to="/pokemon">Search</Link>
       </div>
     </nav>
   )
